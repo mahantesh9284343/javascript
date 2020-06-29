@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Registration Form</title>
+  <style>
+    table{
+      
+    }
+  </style>
+</head>
+<body Onload=document.forms[0].elements[0].focus();>
+  <h1>Registraction Form</h1>
+    
+	<form method="get" name="f" action="" onSubmit="return !!(verify(this.form) & result());">
+    <table>
+      <tr>
+          <td>First Name:</td>
+          <td><input type="text" name="fname" id="name" required></td>
+      </tr>
+      <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+      <tr>
+          <td>E-mail:</td>
+          <td><input type="E-mail" name="email" id="email" required></td>
+      </tr>
+      <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+      <tr>
+          <td>Phone No:</td>
+          <td><input type="text" name="phn" id="phn" required></td>
+      </tr>
+      <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+      <tr>
+        <td>Gender:</td>
+          <td><input type="radio" name="gen" id="m" >Male
+          <input type="radio" name="gen" id="f">Female
+          <input type="radio" name="gen" id="other">Other</td>
+      </tr>
+      <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+      <tr>
+          <td>Subject:</td>
+          <td><input type="checkbox" name="ch" id="html">HTML
+          <input type="checkbox" name="ch" id="css">CSS
+          <input type="checkbox" name="ch" id="js">JavaScript</td>
+      </tr>
+      <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+      <tr>
+          <td>College:</td><td>
+          <input type="text" id="clg"></td>
+      </tr>
+      <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+      <tr>
+          <td><input type="checkbox" name="ch2" required></td>
+          <td>I declare above details given by me are true.</td>
+      </tr>
+      <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+      <tr>
+          <td><input type="submit" value="Submit"></td>
+          <td><input type="reset" value="Reset"></td>
+      </tr>
+      <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+  </table>
+</form>
+
+</body>
+
+</html>
+
+<script src="validate.js">
+
+</script>
+
