@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>Advance javascript</head>
+    <body>
+        <h1>Document Object Model</h1>
+        <p>The DOM is a W3C (World Wide Web Consortium) standard.<br>
+            The DOM defines a standard for accessing documents:<br>            
+            "The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document."<br>
+            The W3C DOM standard is separated into 3 different parts:<br>
+            Core DOM - standard model for all document types<br>
+            XML DOM - standard model for XML documents<br>
+            HTML DOM - standard model for HTML documents</p>
+
+        <h1>Events</h1>
+        
+        <script type="text/javascript">
+        function myfun1(){
+            document.body.style.backgroundColor='blue';
+            document.body.style.color= 'white';
+        }
+        function myfun2(){
+            document.body.style.backgroundColor='red';
+            document.body.style.color= 'white';
+        }
+        function myfun3(){
+            document.body.style.backgroundColor='green';
+            document.body.style.color= 'white';
+        }
+        function myfun4(){
+            document.body.style.backgroundColor='pink';
+            document.body.style.color= 'white';
+        }
+        function funfocus(){
+            document.getElementById("fname").style.backgroundColor = "lime";
+        }
+        
+        document.write("<br>fibonacci series : ")
+        var a,b,c;
+        a=0;
+        b=1;
+        c=b;
+        for(var i=1;i<10;i++)
+        {
+            document.write(c+"<br>");
+            c=a+b;
+            a=b;
+            b=c;
+        }
+        
+        document.write("<br><br>Check number : ")
+        var num=45;
+        switch(num) {
+            case 1:
+            if(num<10)
+            document.write("Number is less thn 10");
+            break;
+            case 2:
+            if(num>100)
+            document.write("Number is Greater thn 10");
+            break;
+            default:
+            document.write("Number is within 10-100");
+            break;
+        }
+
+        document.write("<br><br>Exception Handling : ")
+        try{
+            add();
+            document.write("Skipped code");
+
+        }
+        catch(e){
+            document.write("Function is not defiened");
+        }
+        finally{
+            document.write("<br>")
+            document.write("Define the function")
+        }
+
+        document.write("<br><br>String and Data Structures : ")
+        var x = 'HTML is a computer language devised to allow website creation.These websites can then be viewed by anyone else connected to the Internet. It is relatively easy to learn, with the basics being accessible to most people in one sitting; and quite powerful in what it allows you to create. It is constantly undergoing revision and evolution to meet the demands and requirements of the growing Internet audience under the direction of the » W3C, the organisation charged with designing and maintaining the language.';
+        var words = x.split(' ');
+        document.write("<br>"+words[5]);
+        document.write("<br>"+words[7]);
+        document.write("<br>"+words[10]); 
+
+        </script>
+        <br>
+        <h2>Form</h2>
+        <form action="">
+        <label for="">Name:</label> <input type="text" id="fname" onfocus="funfocus()"> <br><br>
+        <label for="">Class:</label> <input type="text" id=""> <br><br>       
+        <label for="">Country:</label>
+        <select id="">
+            <option value="">India</option>
+            <option value="">Pakisthan</option>
+            <option value="">Nepal</option>
+            <option value="">Sri-lanka</option>
+            <option value="">Dubai</option>
+        </select>
+        </form><br><br>
+
+
+        <button onclick="myfun1()">Button1</button>
+        <button onmouseout="myfun2()">Button2</button>
+        <button onmouseover="myfun3()">Button3</button>
+        <button onkeydown="myfun4()">Button4</button>
+
+    </body>
+</html>
